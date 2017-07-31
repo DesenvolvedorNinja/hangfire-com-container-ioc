@@ -28,7 +28,7 @@ namespace WebDemoHangfire
             // Add framework services.
             services.AddTransient<DemoJob>();
             services.AddTransient<ILogger, DebugLogger>();
-            services.AddHangfire(x => x.UseSqlServerStorage("Data Source=seaweed.arvixe.com;Initial Catalog=hangfire;User id=hangfire;Password=salamandra;"));
+            services.AddHangfire(x => x.UseSqlServerStorage("Data Source=localhost;Initial Catalog=hangfire;User id=hangfire;Password=hangfire;"));
             services.AddMvc();
         }
 
